@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marquee Effect</title>
+    <style>
+        #node-marquee {
+            background-color: #ed665c;
+            color: white;
+            font-size: 30px;
+            overflow: hidden;
+            white-space: nowrap; /* Prevent line breaks */
+        }
+        #node-marquee span {
+            display: inline-block;
+            white-space: nowrap; 
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/node-marquee@3.0.6/build/cdn/index.min.js"></script>
+</head>
+<body>
+    <div id="node-marquee">
+        <span># Fashion # Beauty # Fabrics # Fashion # Beauty # Fabrics # Fashion # Beauty # Fabrics # Fashion # Beauty # Fabrics #</span>
+    </div>
+    <script>
+        nodeMarquee({
+            parent: '#node-marquee',
+            speed: 1
+        });
+    </script>
+</body>
+</html>
